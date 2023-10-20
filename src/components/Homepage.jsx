@@ -1,0 +1,38 @@
+import React from 'react';
+import { FaTwitter, FaLinkedin, FaAngellist } from 'react-icons/fa';
+import { RiMailSendLine } from 'react-icons/ri';
+import { TbBrandGithubFilled } from 'react-icons/tb';
+
+const Homepage = () => (
+  <section className="bg-home-bg-mobile no-repeat bg-cover flex flex-col px-4 py-16  sm:bg-home-bg-desktop sm:w-full sm:bg-contain sm:bg-no-repeat rounded-bl-[100px] bg-center">
+    <div className="sm:px-[8rem] sm:py-[8rem] gap-4 flex flex-col">
+      <h1 className="text-primary font-bold text-40 leading-52">
+        I&apos;m Junaid.
+        <br />
+        Glad to see you!
+      </h1>
+      <p className="text-primary font-normal text-base leading-6">
+        I&apos;m a software developer! I can help you build a product , feature
+        or website. Look through
+        <br />
+        some of my work and experience! If you like what
+        you see and have a project you need
+        <br />
+        coded, don&apos;t hestiate to
+        contact me.
+      </p>
+      <p className="text-tertiary font-medium text-base leading-6">
+        LET&apos;S CONNECT
+      </p>
+      <div className="text-quaternary flex gap-2">
+        <FaTwitter className="hover:text-sky-400 hover:cursor-pointer text-xl" />
+        <FaLinkedin className="hover:text-[#0a66c2] hover:cursor-pointer text-xl" />
+        <RiMailSendLine className="hover:text-red-400 hover:cursor-pointer text-xl" />
+        <TbBrandGithubFilled className="hover:text-black hover:cursor-pointer text-xl" />
+        <FaAngellist className="hover:text-black hover:cursor-pointer text-xl" />
+      </div>
+    </div>
+  </section>
+);
+
+export default Homepage;
