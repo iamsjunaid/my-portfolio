@@ -13,7 +13,7 @@ const Navbar = () => {
           Logo
         </Link>
         <GiHamburgerMenu
-          className="menu"
+          className="menu hover:text-secondary cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)}
         />
       </div>
