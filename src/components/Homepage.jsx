@@ -4,8 +4,8 @@ import { RiMailSendLine } from 'react-icons/ri';
 import { TbBrandGithubFilled } from 'react-icons/tb';
 
 const Homepage = () => (
-  <section className="bg-home-bg-mobile no-repeat bg-cover flex flex-col px-4 py-16  sm:bg-home-bg-desktop sm:w-full sm:bg-contain sm:bg-no-repeat rounded-bl-[100px] bg-center">
-    <div className="sm:px-[8rem] sm:py-[8rem] gap-4 flex flex-col">
+  <section className="bg-home-bg-mobile bg-white bg-no-repeat bg-cover flex flex-col px-8 py-32 sm:px-4 sm:py-16  sm:bg-home-bg-desktop md:w-full md:bg-contain md:bg-no-repeat rounded-bl-[100px] bg-center">
+    <div className="gap-4 flex flex-col">
       <h1 className="text-primary font-bold text-40 leading-52">
         I&apos;m Junaid.
         <br />
