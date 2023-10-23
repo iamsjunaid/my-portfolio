@@ -25,11 +25,11 @@ const Homepage = () => (
         LET&apos;S CONNECT
       </p>
       <div className="text-quaternary flex gap-2">
-        <FaTwitter className="hover:text-sky-400 hover:cursor-pointer text-xl" />
-        <FaLinkedin className="hover:text-[#0a66c2] hover:cursor-pointer text-xl" />
-        <RiMailSendLine className="hover:text-red-400 hover:cursor-pointer text-xl" />
-        <TbBrandGithubFilled className="hover:text-black hover:cursor-pointer text-xl" />
-        <FaAngellist className="hover:text-black hover:cursor-pointer text-xl" />
+        <a href="https://twitter.com/junaidahmedsd" aria-label="Twitter"><FaTwitter className="hover:text-sky-400 hover:cursor-pointer text-xl" /></a>
+        <a href="https://www.linkedin.com/in/junaidahmedsyed/" aria-label="LinkedIn"><FaLinkedin className="hover:text-[#0a66c2] hover:cursor-pointer text-xl" /></a>
+        <a href="mailto:sjunaid626@gmail.com" aria-label="Mail"><RiMailSendLine className="hover:text-red-400 hover:cursor-pointer text-xl" /></a>
+        <a href="https://github.com/iamsjunaid" aria-label="GitHub"><TbBrandGithubFilled className="hover:text-black hover:cursor-pointer text-xl" /></a>
+        <a href="https://wellfound.com/u/junaid-ahmed-shakeel-ahmed-syed" aria-label="Wellfound"><FaAngellist className="hover:text-black hover:cursor-pointer text-xl" /></a>
       </div>
     </div>
   </section>
