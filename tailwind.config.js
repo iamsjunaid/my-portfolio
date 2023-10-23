@@ -18,9 +18,11 @@ module.exports = {
       },
       lineHeight: {
         52: '3.25rem',
+        44: '2.75rem',
       },
       fontSize: {
         40: '2.5rem',
+        32: '2rem',
       },
     },
   },
