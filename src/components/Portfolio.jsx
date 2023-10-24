@@ -1,17 +1,23 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import PorfolioCard from './PortfolioCard';
 import mealsDb from '../assets/img/mealsdb.png';
+import budgetBee from '../assets/img/budget-bee.png';
+import docTalk from '../assets/img/doc-talk.png';
+import nationsFacts from '../assets/img/nations-facts.png';
+import spaceTravellersHub from '../assets/img/space-travellers-hub.png';
 
 const Portfolio = () => {
   const projects = [
     {
-      id: '0',
-      img: './images/project-snapshots/doctalk.jpg',
+      no: '0',
+      id: uuidv4(),
+      img: docTalk,
       company: 'Microverse',
       designation: 'Full-stack developer',
       year: '2023',
       title: 'Doc Talk',
-      desc: 'DocTalk is your trusted health companion, bringing the power of informed conversations to your fingertips. We believe that clear and open communication is the key to better healthcare decisions, and that&apos;s what Doctalk is all about.',
+      desc: 'DocTalk is your trusted health companion, bringing the power of informed conversations to your fingertips. We believe that clear and open communication is the key to better healthcare decisions, and thats what Doctalk is all about.',
       techs: [
         'Ruby on Rails',
         'PostgreSQL',
@@ -25,8 +31,9 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/DocTalk-Frontend',
     },
     {
-      id: '1',
-      img: './images/project-snapshots/budget-bee.png',
+      no: '1',
+      id: uuidv4(),
+      img: budgetBee,
       company: 'Microverse',
       designation: 'Back-end developer',
       year: '2023',
@@ -37,8 +44,9 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/budget-bee',
     },
     {
-      id: '2',
-      img: './images/project-snapshots/nations-facts.jpg',
+      no: '2',
+      id: uuidv4(),
+      img: nationsFacts,
       company: 'Microverse',
       designation: 'Front-end developer',
       year: '2023',
@@ -49,8 +57,9 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/nations-facts',
     },
     {
-      id: '3',
-      img: './images/project-snapshots/space-travellers-hub.jpg',
+      no: '3',
+      id: uuidv4(),
+      img: spaceTravellersHub,
       company: 'Microverse',
       designation: 'Front-end developer',
       year: '2023',
@@ -62,7 +71,8 @@ const Portfolio = () => {
     },
 
     {
-      id: '4',
+      no: '4',
+      id: uuidv4(),
       img: mealsDb,
       company: 'Microverse',
       designation: 'Front-end Developer',
@@ -74,6 +84,7 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/MealsDB',
     },
   ];
+
   return (
     <section className="flex flex-col gap-8 w-[80%] mx-auto text-center my-16 ">
       {projects.map((project) => (
