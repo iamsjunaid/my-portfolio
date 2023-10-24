@@ -9,7 +9,7 @@ const PortfolioCard = ({ project }) => {
       <img
         src={project.img}
         alt={project.title}
-        className="rounded-xl mx-auto border-y-[2.5rem] border-x-[.5rem] border-secondary w-[18rem] h-[16rem] shadow-md"
+        className="rounded-xl mx-auto border-y-[2.5rem] border-x-[.5rem] border-secondary w-[18rem] h-[16rem] shadow-md sm:w-[25rem] sm:h-[20rem]"
       />
       <div className="flex flex-col gap-4">
         <h1 className="text-left text-primary font-bold text-32 leading-44">
