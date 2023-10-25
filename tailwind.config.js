@@ -10,16 +10,19 @@ module.exports = {
         'home-bg-mobile': "url('/src/assets/img/header-bg-mobile.png')",
       },
       colors: {
-        primary: '#172B4D',
-        secondary: '#6070FF',
-        tertiary: '#7F8CFF',
-        quaternary: '#505F79',
+        primary: '#172B4D', // homepage heading color
+        secondary: '#6070FF', // blue hover effect
+        tertiary: '#7F8CFF', // light blue
+        quaternary: '#505F79', // icon color
+        bgGray: '#F4F5F7',
       },
       lineHeight: {
         52: '3.25rem',
+        44: '2.75rem',
       },
       fontSize: {
         40: '2.5rem',
+        32: '2rem',
       },
     },
   },
