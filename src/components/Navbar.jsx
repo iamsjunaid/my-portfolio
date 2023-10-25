@@ -7,7 +7,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="flex justify-between sticky top-0 shadow-md bg-white">
+    <nav className="flex justify-between sticky top-0 shadow-md bg-white z-50">
       <div className="flex justify-between items-center p-4 w-full">
         <Link to="/" className="font-bold text-secondary">
           Logo
