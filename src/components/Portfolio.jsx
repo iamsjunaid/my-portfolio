@@ -64,7 +64,7 @@ const Portfolio = () => {
       designation: 'Front-end developer',
       year: '2023',
       title: 'Space Travellers Hub',
-      desc: 'Space Travelers Hub In this project, We have worked with real live data from the SpaceX API. We have built a web application that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends. ',
+      desc: ' We have built a web application that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends. ',
       techs: ['ReactJS', 'Redux', 'React Testing Library'],
       live: 'https://space-travelers-hub-dhiu.onrender.com/',
       source: 'https://github.com/iamsjunaid/space-travelers-hub',
@@ -86,7 +86,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="flex flex-col gap-8 w-[80%] mx-auto text-center my-16 ">
+    <section className="flex flex-col gap-12 w-[80%] mx-auto text-center my-16 ">
       {projects.map((project) => (
         <PorfolioCard key={project.id} project={project} />
       ))}
