@@ -56,30 +56,14 @@ const About = () => {
           LET&apos;S CONNECT
         </p>
         <div className="text-quaternary flex gap-2">
-          <a href="https://twitter.com/junaidahmedsd" aria-label="Twitter">
-            <FaTwitter className="hover:text-sky-400 hover:cursor-pointer text-xl" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/junaidahmedsyed/"
-            aria-label="LinkedIn"
-          >
-            <FaLinkedin className="hover:text-[#0a66c2] hover:cursor-pointer text-xl" />
-          </a>
-          <a href="mailto:sjunaid626@gmail.com" aria-label="Mail">
-            <RiMailSendLine className="hover:text-red-400 hover:cursor-pointer text-xl" />
-          </a>
-          <a href="https://github.com/iamsjunaid" aria-label="GitHub">
-            <TbBrandGithubFilled className="hover:text-black hover:cursor-pointer text-xl" />
-          </a>
-          <a
-            href="https://wellfound.com/u/junaid-ahmed-shakeel-ahmed-syed"
-            aria-label="Wellfound"
-          >
-            <FaAngellist className="hover:text-black hover:cursor-pointer text-xl" />
-          </a>
+          <a href="https://twitter.com/junaidahmedsd" aria-label="Twitter"><FaTwitter className="hover:text-sky-400 hover:cursor-pointer text-2xl hover:cursor-pointer transition duration-500 ease-in-out" /></a>
+          <a href="https://www.linkedin.com/in/junaidahmedsyed/" aria-label="LinkedIn"><FaLinkedin className="hover:text-[#0a66c2] hover:cursor-pointer text-2xl hover:cursor-pointer transition duration-500 ease-in-out" /></a>
+          <a href="mailto:sjunaid626@gmail.com" aria-label="Mail"><RiMailSendLine className="hover:text-red-400 hover:cursor-pointer text-2xl hover:cursor-pointer transition duration-500 ease-in-out" /></a>
+          <a href="https://github.com/iamsjunaid" aria-label="GitHub"><TbBrandGithubFilled className="hover:text-black hover:cursor-pointer text-2xl hover:cursor-pointer transition duration-500 ease-in-out" /></a>
+          <a href="https://wellfound.com/u/junaid-ahmed-shakeel-ahmed-syed" aria-label="Wellfound"><FaAngellist className="hover:text-black hover:cursor-pointer text-2xl hover:cursor-pointer transition duration-500 ease-in-out" /></a>
         </div>
         <button
-          className="border rounded-md border-secondary px-4 py-2 text-secondary bg-white text-left w-max see-project-btn"
+          className="border rounded-md border-secondary px-4 py-2 text-secondary bg-white text-left w-max see-project-btn hover:cursor-pointer hover:bg-secondary hover:text-white transition duration-500 ease-in-out"
           type="button"
           title="Navigate to google docs"
         >
@@ -88,7 +72,7 @@ const About = () => {
           </a>
         </button>
       </div>
-      <div className="w-full">
+      <div className="w-full sm:h-[100%]">
         <ul className="flex flex-col gap-4">
           <li className="border-b-2">
             <div className="flex justify-between items-center py-2">
