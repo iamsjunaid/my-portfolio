@@ -26,7 +26,7 @@ const PortfolioCard = ({ project }) => {
             href={project.live}
             target="_blank"
             rel="noreferrer"
-            className="text-white font-medium see-live hidden"
+            className="text-white text-2xl font-medium see-live hidden"
           >
             See Live
           </a>
@@ -61,7 +61,7 @@ const PortfolioCard = ({ project }) => {
           ))}
         </ul>
         <button
-          className="border rounded-md border-secondary px-4 py-2 text-secondary bg-white text-left w-max see-project-btn"
+          className="border rounded-md border-secondary px-4 py-2 text-secondary bg-white text-left w-max hover:cursor-pointer hover:bg-secondary hover:text-white transition duration-500 ease-in-out see-project-btn"
           type="button"
           onClick={handleButtonClick}
           title="Navigate to Github Repository"

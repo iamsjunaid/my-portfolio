@@ -8,6 +8,8 @@ module.exports = {
       backgroundImage: {
         'home-bg-desktop': "url('/src/assets/img/header-bg.png')",
         'home-bg-mobile': "url('/src/assets/img/header-bg-mobile.png')",
+        'contact-bg': "url('/src/assets/img/contact-form-bg.png')",
+        'contact-bg-mobile': "url('/src/assets/img/contact-form-bg-mobile.png')",
       },
       colors: {
         primary: '#172B4D', // homepage heading color
