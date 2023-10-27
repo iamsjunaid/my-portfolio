@@ -12,7 +12,7 @@ const PortfolioCard = ({ project }) => {
 
   return (
     <div
-      className={`bg-white rounded-xl border border-[#DFE1E6] flex flex-col p-4 sm:p-8 gap-4 sm:gap-4 sm:flex-row sm:h-[32rem] sm:gap-8 ${
+      className={`bg-white rounded-xl border border-[#DFE1E6] flex flex-col p-4 sm:p-8 gap-4 sm:gap-4 sm:flex-row sm:h-[32rem] sm:gap-8 shadow-3xl ${
         project.no % 2 === 0 ? 'sm:flex-row-reverse' : 'sm:flex-row'
       }`}
     >
