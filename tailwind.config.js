@@ -26,6 +26,9 @@ module.exports = {
         40: '2.5rem',
         32: '2rem',
       },
+      boxShadow: {
+        '3xl': 'rgba(0, 0, 0, 0.24) 0px 3px 8px',
+      },
     },
   },
   plugins: [],
