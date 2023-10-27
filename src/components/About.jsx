@@ -38,7 +38,7 @@ const About = () => {
   };
 
   return (
-    <section className="bg-white flex flex-col sm:flex-row items-center justify-center px-8 sm:p-48 rounded-tr-[100px] h-screen gap-8">
+    <section id="about" className="bg-white flex flex-col sm:flex-row items-center justify-center px-8 sm:p-48 rounded-tr-[100px] h-screen gap-8">
       <div className="gap-4 flex flex-col">
         <h1 className="text-primary font-bold text-40 leading-52">
           About Myself
