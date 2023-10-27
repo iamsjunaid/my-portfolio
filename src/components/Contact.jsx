@@ -35,7 +35,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-contact-bg-mobile bg-secondary bg-no-repeat bg-contain bg-right flex flex-col items-center justify-center px-8 sm:p-48  sm:bg-contact-bg md:w-full md:bg-contain md:bg-no-repeat rounded-tl-[100px] bg-center h-screen">
+    <section id="contact" className="bg-contact-bg-mobile bg-secondary bg-no-repeat bg-contain bg-right flex flex-col items-center justify-center px-8 sm:p-48  sm:bg-contact-bg md:w-full md:bg-contain md:bg-no-repeat rounded-tl-[100px] bg-center h-screen">
       {showPopup && <SuccessPopup onClose={closePopup} />}
       <div className="gap-4 flex flex-col justify-center items-center sm:w-[70%]">
         <h1 className="text-white font-bold text-40 leading-52 text-white">
@@ -46,7 +46,7 @@ const Contact = () => {
           that you need built or a project that needs coding. I&apos;d love to
           help with it!
         </p>
-        <form onSubmit={handleSubmit} type="submit" disabled={state.submitting} className="w-[20.5rem] flex flex-col text-center gap-4">
+        <form onSubmit={handleSubmit} type="submit" disabled={state.submitting} className="w-[80%] sm:w-[24rem] flex flex-col text-center gap-4">
           <input
             type="text"
             className="h-[3rem] rounded-md p-1"

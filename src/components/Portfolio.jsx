@@ -86,7 +86,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="flex flex-col gap-12 w-[80%] mx-auto text-center my-16 ">
+    <section id="portfolio" className="flex flex-col gap-12 w-[80%] mx-auto text-center my-16 ">
       {projects.map((project) => (
         <PorfolioCard key={project.id} project={project} />
       ))}

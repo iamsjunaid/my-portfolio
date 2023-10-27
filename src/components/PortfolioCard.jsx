@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { BiSolidCircle } from 'react-icons/bi';
+import { MdRocketLaunch } from 'react-icons/md';
 import '../assets/styles/PortfolioCard.css';
 
 const PortfolioCard = ({ project }) => {
@@ -11,7 +12,7 @@ const PortfolioCard = ({ project }) => {
 
   return (
     <div
-      className={`bg-white rounded-xl border border-[#DFE1E6] flex flex-col p-4 sm:p-8 gap-4 sm:gap-4 sm:flex-row sm:h-[32rem] sm:gap-8 ${
+      className={`bg-white rounded-xl border border-[#DFE1E6] flex flex-col p-4 sm:p-8 gap-4 sm:gap-4 sm:flex-row sm:h-[32rem] sm:gap-8 shadow-3xl ${
         project.no % 2 === 0 ? 'sm:flex-row-reverse' : 'sm:flex-row'
       }`}
     >
@@ -21,16 +22,15 @@ const PortfolioCard = ({ project }) => {
           alt={project.title}
           className="rounded-xl mx-auto border-y-[4rem] border-x-[1rem] border-secondary w-[70vw] h-[48vh] shadow-md sm:h-[100vh] project-img"
         />
-        <button type="button" className="absolute">
+        <div className="absolute top-0 right-2 sm:top-0 sm:right-0 hover:bg-white hover:text-secondary hover:border-secondary border-2 rounded-full p-4 text-white items-center transition duration-500 ease-in-out see-live">
           <a
             href={project.live}
             target="_blank"
             rel="noreferrer"
-            className="text-white text-2xl font-medium see-live hidden"
           >
-            See Live
+            <MdRocketLaunch className="text-2xl " title="See Live" />
           </a>
-        </button>
+        </div>
       </div>
       <div className="flex flex-col gap-4 sm:gap-8 justify-start">
         <h1 className="text-left text-primary font-bold text-32 leading-44">
