@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="flex justify-between sticky top-0 shadow-md bg-white z-50 px-4">
       <div className="flex justify-between items-center w-full">
         <a href="#home" className="text-secondary transition duration-500 ease-in-out">
-          <img src={logo} alt="logo" className="w-24" />
+          <img src={logo} alt="logo" className="w-16" />
         </a>
         <GiHamburgerMenu
           className="menu text-2xl text-secondary cursor-pointer transition duration-500 ease-in-out"

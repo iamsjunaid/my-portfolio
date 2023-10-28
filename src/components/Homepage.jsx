@@ -12,14 +12,11 @@ const Homepage = () => (
         Glad to see you!
       </h1>
       <p className="text-primary font-normal text-base leading-6">
-        I&apos;m a software developer! I can help you build a product , feature
-        or website. Look through
+        I&apos;m an experienced software developer with a degree in Computer Science Engineering.
         <br />
-        some of my work and experience! If you like what
-        you see and have a project you need
+        Bringing ideas to life through code. So if you Have an idea that needs to be designed and
         <br />
-        coded, don&apos;t hestiate to
-        contact me.
+        coded, feel free to contact me.
       </p>
       <p className="text-tertiary font-medium text-base leading-6">
         LET&apos;S CONNECT
