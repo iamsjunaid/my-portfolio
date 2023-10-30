@@ -59,26 +59,30 @@ const About = () => {
           LET&apos;S CONNECT
         </p>
         <div className="text-quaternary flex gap-2">
-          <a href="https://twitter.com/junaidahmedsd" aria-label="Twitter">
+          <a href="https://twitter.com/junaidahmedsd" aria-label="Twitter" target="_blank" rel="noreferrer">
             <FaTwitter className="hover:text-sky-400 hover:cursor-pointer text-2xl hover:cursor-pointer transition duration-500 ease-in-out" />
           </a>
           <a
             href="https://www.linkedin.com/in/junaidahmedsyed/"
             aria-label="LinkedIn"
+            target="_blank"
+            rel="noreferrer"
           >
             <FaLinkedin className="hover:text-[#0a66c2] hover:cursor-pointer text-2xl hover:cursor-pointer transition duration-500 ease-in-out" />
           </a>
-          <a href="mailto:sjunaid626@gmail.com" aria-label="Mail">
+          <a href="mailto:sjunaid626@gmail.com" aria-label="Mail" target="_blank" rel="noreferrer">
             <RiMailSendLine className="hover:text-red-400 hover:cursor-pointer text-2xl hover:cursor-pointer transition duration-500 ease-in-out" />
           </a>
-          <a href="https://github.com/iamsjunaid" aria-label="GitHub">
+          <a href="https://github.com/iamsjunaid" aria-label="GitHub" target="_blank" rel="noreferrer">
             <TbBrandGithubFilled className="hover:text-black hover:cursor-pointer text-2xl hover:cursor-pointer transition duration-500 ease-in-out" />
           </a>
           <a
             href="https://wellfound.com/u/junaid-ahmed-shakeel-ahmed-syed"
             aria-label="Wellfound"
+            target="_blank"
+            rel="noreferrer"
           >
-            <FaAngellist className="hover:text-black hover:cursor-pointer text-2xl hover:cursor-pointer transition duration-500 ease-in-out" />
+            <FaAngellist className="hover:text-black hover:cursor-pointer text-2xl hover:cursor-pointer transition duration-500 ease-in-out" target="_blank" rel="noreferrer" />
           </a>
         </div>
         <button
