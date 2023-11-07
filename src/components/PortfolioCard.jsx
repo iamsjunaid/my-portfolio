@@ -22,13 +22,15 @@ const PortfolioCard = ({ project }) => {
           alt={project.title}
           className="rounded-xl mx-auto border-y-[4rem] border-x-[1rem] border-secondary w-[70vw] h-[32vh] shadow-md sm:h-[100vh] project-img"
         />
-        <div className="absolute top-0 right-2 sm:top-0 sm:right-0 hover:bg-white hover:text-secondary hover:border-secondary border-2 rounded-full p-4 text-white items-center transition duration-500 ease-in-out see-live">
+        <div className="absolute top-2 right-2 text-center hover:bg-white hover:text-secondary hover:border-secondary border-2 rounded-xl p-4 text-white items-center transition duration-500 ease-in-out see-live">
           <a
             href={project.live}
             target="_blank"
             rel="noreferrer"
+            className="flex justify-center items-center px-1 gap-1"
           >
-            <MdRocketLaunch className="text-2xl " title="See Live" />
+            <p className="text-xs">See Live</p>
+            <MdRocketLaunch className="text-xs" title="See Live" />
           </a>
         </div>
       </div>
