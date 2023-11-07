@@ -14,7 +14,7 @@ const Homepage = () => (
       <p className="text-primary font-normal text-base leading-6">
         I&apos;m an experienced software developer with a degree in Computer Science Engineering.
         <br />
-        Bringing ideas to life through code. So if you Have an idea that needs to be designed and
+        Bringing ideas to life through code. So if you have an idea that needs to be designed and
         <br />
         coded, feel free to contact me.
       </p>
