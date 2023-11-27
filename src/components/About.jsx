@@ -11,6 +11,10 @@ import redux from '../assets/img/icons/redux.png';
 import ror from '../assets/img/icons/ror.png';
 import postgres from '../assets/img/icons/postgres.png';
 import mysql from '../assets/img/icons/mysql.png';
+import next from '../assets/img/icons/next.png';
+import git from '../assets/img/icons/git.png';
+import github from '../assets/img/icons/github.png';
+import vscode from '../assets/img/icons/vscode.png';
 
 const About = () => {
   const [showLanguages, setShowLanguages] = useState(false);
@@ -21,6 +25,9 @@ const About = () => {
 
   const [showDatabases, setShowDatabases] = useState(false);
   const [databasesButtonClicked, setDatabasesButtonClicked] = useState(false);
+
+  const [showTools, setShowTools] = useState(false);
+  const [toolsButtonClicked, setToolsButtonClicked] = useState(false);
 
   const handleShowLanguages = () => {
     setShowLanguages(!showLanguages);
@@ -35,6 +42,11 @@ const About = () => {
   const handleShowDatabases = () => {
     setShowDatabases(!showDatabases);
     setDatabasesButtonClicked(!databasesButtonClicked);
+  };
+
+  const handleShowTools = () => {
+    setShowTools(!showTools);
+    setToolsButtonClicked(!toolsButtonClicked);
   };
 
   return (
@@ -93,7 +105,7 @@ const About = () => {
           <a href="https://drive.google.com/file/d/1W8h0t66EiqpvudibadHvVV1gDct-_Y75/view?usp=drive_link" target="_blank" rel="noreferrer">Get My Resume</a>
         </button>
       </div>
-      <div className="w-full sm:h-[100%]">
+      <div className="w-full sm:h-auto">
         <ul className="flex flex-col gap-4">
           <li className="border-b-2">
             <div className="flex justify-between items-center py-2">
@@ -117,14 +129,14 @@ const About = () => {
                 showLanguages === true ? 'flex-row' : 'hidden'
               }`}
             >
-              <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
-                <img src={html} alt="html" className="w-[62px] h-[62px]" />
+              <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex flex-col justify-center items-center">
+                <img src={html} alt="html" className="w-[50px] h-[50px]" />
               </div>
               <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
-                <img src={css} alt="css" className="w-[62px] h-[62px]" />
+                <img src={css} alt="css" className="w-[50px] h-[50px]" />
               </div>
               <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
-                <img src={js} alt="js" className="w-[62px] h-[62px]" />
+                <img src={js} alt="js" className="w-[50px] h-[50px]" />
               </div>
             </div>
           </li>
@@ -151,16 +163,19 @@ const About = () => {
               }`}
             >
               <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
-                <img src={react} alt="react" className="w-[62px] h-[62px]" />
+                <img src={react} alt="react" className="w-[50px] h-[50px]" />
               </div>
               <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
-                <img src={redux} alt="redux" className="w-[62px] h-[62px]" />
+                <img src={redux} alt="redux" className="w-[50px] h-[50px]" />
+              </div>
+              <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
+                <img src={next} alt="nextjs" className="w-[50px] h-[50px]" />
               </div>
               <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
                 <img
                   src={ror}
                   alt="ruby-on-rails"
-                  className="w-[62px] h-[62px]"
+                  className="w-[50px] h-[50px]"
                 />
               </div>
             </div>
@@ -191,11 +206,48 @@ const About = () => {
                 <img
                   src={postgres}
                   alt="postgres"
-                  className="w-[62px] h-[62px]"
+                  className="w-[50px] h-[50px]"
                 />
               </div>
               <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
-                <img src={mysql} alt="mysql" className="w-[62px] h-[62px]" />
+                <img src={mysql} alt="mysql" className="w-[50px] h-[50px]" />
+              </div>
+            </div>
+          </li>
+          <li className="border-b-2">
+            <div className="flex justify-between items-center py-2">
+              <p className="text-[20px] leading-[24px]">Tools and Version Control</p>
+              <span>
+                {toolsButtonClicked ? (
+                  <HiChevronDown
+                    onClick={handleShowTools}
+                    className="text-2xl hover:cursor-pointer"
+                  />
+                ) : (
+                  <HiChevronRight
+                    onClick={handleShowTools}
+                    className="text-2xl hover:cursor-pointer"
+                  />
+                )}
+              </span>
+            </div>
+            <div
+              className={`flex gap-4 ${
+                showTools === true ? 'flex-row' : 'hidden'
+              }`}
+            >
+              <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
+                <img
+                  src={git}
+                  alt="git"
+                  className="w-[50px] h-[50px]"
+                />
+              </div>
+              <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
+                <img src={github} alt="github" className="w-[50px] h-[50px]" />
+              </div>
+              <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
+                <img src={vscode} alt="vscode" className="w-[50px] h-[50px]" />
               </div>
             </div>
           </li>
