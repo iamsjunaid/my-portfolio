@@ -1,4 +1,0 @@
-This is a Brave Creators publisher verification file.
-
-Domain: junaidsyed.onrender.com
-Token: 799732dc2f438bc1cd586c46d348c9916b5fa9a3628129123ec39aaa58160aed
