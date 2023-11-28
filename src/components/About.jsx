@@ -15,12 +15,6 @@ import next from '../assets/img/icons/next.png';
 import git from '../assets/img/icons/git.png';
 import github from '../assets/img/icons/github.png';
 import vscode from '../assets/img/icons/vscode.png';
-import ruby from '../assets/img/icons/ruby.png';
-import tailwind from '../assets/img/icons/tailwind.png';
-import bootstrap from '../assets/img/icons/bootstrap.png';
-import responsive from '../assets/img/icons/responsive.png';
-import tdd from '../assets/img/icons/tdd.png';
-import rspec from '../assets/img/icons/rspec.png';
 
 const About = () => {
   const [showLanguages, setShowLanguages] = useState(false);
@@ -58,7 +52,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-white flex flex-col sm:flex-row items-center justify-center p-8 sm:p-48 rounded-tr-[100px] h-auto gap-8"
+      className="bg-white flex flex-col sm:flex-row items-center justify-center px-8 sm:p-48 rounded-tr-[100px] h-screen gap-8"
     >
       <div className="gap-4 flex flex-col">
         <h1 className="text-primary font-bold text-40 leading-52">
@@ -131,7 +125,7 @@ const About = () => {
               </span>
             </div>
             <div
-              className={`flex gap-4 flex-wrap ${
+              className={`flex gap-4 ${
                 showLanguages === true ? 'flex-row' : 'hidden'
               }`}
             >
@@ -143,9 +137,6 @@ const About = () => {
               </div>
               <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
                 <img src={js} alt="js" className="w-[50px] h-[50px]" />
-              </div>
-              <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
-                <img src={ruby} alt="ruby" className="w-[50px] h-[50px]" />
               </div>
             </div>
           </li>
@@ -167,7 +158,7 @@ const About = () => {
               </span>
             </div>
             <div
-              className={`flex gap-4 flex-wrap ${
+              className={`flex gap-4 ${
                 showFrameworks === true ? 'flex-row' : 'hidden'
               }`}
             >
@@ -179,12 +170,6 @@ const About = () => {
               </div>
               <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
                 <img src={next} alt="nextjs" className="w-[50px] h-[50px]" />
-              </div>
-              <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
-                <img src={tailwind} alt="tailwindcss" className="w-[50px] h-[50px]" />
-              </div>
-              <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
-                <img src={bootstrap} alt="bootstrap" className="w-[50px] h-[50px]" />
               </div>
               <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
                 <img
@@ -213,7 +198,7 @@ const About = () => {
               </span>
             </div>
             <div
-              className={`flex gap-4 flex-wrap ${
+              className={`flex gap-4 ${
                 showDatabases === true ? 'flex-row' : 'hidden'
               }`}
             >
@@ -231,7 +216,7 @@ const About = () => {
           </li>
           <li className="border-b-2">
             <div className="flex justify-between items-center py-2">
-              <p className="text-[20px] leading-[24px]">Version Control Tools and IDEs</p>
+              <p className="text-[20px] leading-[24px]">Tools and Version Control</p>
               <span>
                 {toolsButtonClicked ? (
                   <HiChevronDown
@@ -247,7 +232,7 @@ const About = () => {
               </span>
             </div>
             <div
-              className={`flex gap-4 flex-wrap ${
+              className={`flex gap-4 ${
                 showTools === true ? 'flex-row' : 'hidden'
               }`}
             >
@@ -263,15 +248,6 @@ const About = () => {
               </div>
               <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
                 <img src={vscode} alt="vscode" className="w-[50px] h-[50px]" />
-              </div>
-              <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
-                <img src={responsive} alt="responsive" className="w-[50px] h-[50px]" />
-              </div>
-              <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
-                <img src={tdd} alt="tdd" className="w-[50px] h-[50px]" />
-              </div>
-              <div className="h-[80px] w-[80px] bg-[#f4f5f7] rounded-[50%] inline-block flex justify-center items-center">
-                <img src={rspec} alt="rspec" className="w-[50px] h-[50px]" />
               </div>
             </div>
           </li>
