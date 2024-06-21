@@ -9,8 +9,47 @@ import spaceTravellersHub from '../assets/img/space-travellers-hub.png';
 
 const Portfolio = () => {
   const projects = [
-    {
+     {
       no: '0',
+      id: uuidv4(),
+      img: docTalk,
+      company: 'Self employed',
+      designation: 'Frontend developer',
+      year: '2024',
+      title: 'Healthcare Dashboard',
+      desc: 'This project involves creating a web application to fetch and display patient data securely, including health metrics such as heart rate, respiratory rate, and blood pressure, specifically for a patient named Jessica Taylor. Utilizing Vite for the build process, the project employs environment variables to securely manage sensitive information like',
+      techs: [
+        'HTML5',
+        'CSS3',
+        'Vanilla JavaScript',
+        'ChartJS',
+        'Adobe XD',
+      ],
+      live: 'https://healthcare-dashboard.onrender.com/',
+      source: 'https://github.com/iamsjunaid/healthcare_dashboard',
+    },
+     {
+      no: '1',
+      id: uuidv4(),
+      img: docTalk,
+      company: 'Self employed',
+      designation: 'Full-stack developer',
+      year: '2024',
+      title: 'TweetX',
+      desc: 'TweetX is a user-friendly social media platform that simplifies the way you connect and share in the digital realm. With a seamless user experience, TweetX empowers users with essential features for authentic engagement.',
+      techs: [
+        'ReactJS',
+        'JavaScript',
+        'Google Firebase',
+        'HTML5',
+        'CSS3',
+        'TailwindCSS',
+      ],
+      live: 'https://tweetx-kez3.onrender.com/',
+      source: 'https://github.com/iamsjunaid/tweetx-web',
+    },
+    {
+      no: '2',
       id: uuidv4(),
       img: docTalk,
       company: 'Microverse',
@@ -31,7 +70,7 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/DocTalk-Frontend',
     },
     {
-      no: '1',
+      no: '3',
       id: uuidv4(),
       img: budgetBee,
       company: 'Microverse',
@@ -44,7 +83,7 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/budget-bee',
     },
     {
-      no: '2',
+      no: '4',
       id: uuidv4(),
       img: nationsFacts,
       company: 'Microverse',
@@ -57,7 +96,7 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/nations-facts',
     },
     {
-      no: '3',
+      no: '5',
       id: uuidv4(),
       img: spaceTravellersHub,
       company: 'Microverse',
@@ -71,7 +110,7 @@ const Portfolio = () => {
     },
 
     {
-      no: '4',
+      no: '6',
       id: uuidv4(),
       img: mealsDb,
       company: 'Microverse',
