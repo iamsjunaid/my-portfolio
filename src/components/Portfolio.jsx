@@ -7,11 +7,30 @@ import docTalk from '../assets/img/doc-talk.png';
 import nationsFacts from '../assets/img/nations-facts.png';
 import spaceTravellersHub from '../assets/img/space-travellers-hub.png';
 import healthCareDashboard from '../assets/img/healthcareDashboard.jpg';
+import nextEvents from '../assets/img/next-events.png';
 
 const Portfolio = () => {
   const projects = [
     {
       no: '0',
+      id: uuidv4(),
+      img: nextEvents,
+      company: 'Self employed',
+      designation: 'Full stack developer',
+      year: '2024',
+      title: 'Next Events',
+      desc: 'Next Events is a web application that allows users to search for upcoming events in their area. The application allows users to browse events. Users can filter the events based on date and month. The application is built using the Next.js framework. The application is fully responsive and optimized for mobile devices and it is deployed on Vercel.',
+      techs: [
+        'NextJS',
+        'ReactJS',
+        'Vanilla JavaScript',
+        'CSS3',
+      ],
+      live: 'https://next-events-pi-smoky.vercel.app/events',
+      source: 'https://github.com/iamsjunaid/next_events',
+    },
+    {
+      no: '1',
       id: uuidv4(),
       img: healthCareDashboard,
       company: 'Self employed',
@@ -30,7 +49,7 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/healthcare_dashboard',
     },
     {
-      no: '1',
+      no: '2',
       id: uuidv4(),
       img: docTalk,
       company: 'Microverse',
@@ -51,7 +70,7 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/DocTalk-Frontend',
     },
     {
-      no: '2',
+      no: '3',
       id: uuidv4(),
       img: budgetBee,
       company: 'Microverse',
@@ -64,7 +83,7 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/budget-bee',
     },
     {
-      no: '3',
+      no: '4',
       id: uuidv4(),
       img: nationsFacts,
       company: 'Microverse',
@@ -77,7 +96,7 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/nations-facts',
     },
     {
-      no: '4',
+      no: '5',
       id: uuidv4(),
       img: spaceTravellersHub,
       company: 'Microverse',
@@ -91,7 +110,7 @@ const Portfolio = () => {
     },
 
     {
-      no: '5',
+      no: '6',
       id: uuidv4(),
       img: mealsDb,
       company: 'Microverse',
