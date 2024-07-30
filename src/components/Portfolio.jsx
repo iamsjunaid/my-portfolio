@@ -69,7 +69,7 @@ const Portfolio = () => {
         'Vanilla JavaScript',
         'CSS3',
       ],
-      live: 'https://vercel.live/link/next-events-git-dev-junaid-syeds-projects.vercel.app?via=deployment-domains-list-branch',
+      live: 'https://next-events-pi.vercel.app/',
       source: 'https://github.com/iamsjunaid/next_events',
     },
     {
