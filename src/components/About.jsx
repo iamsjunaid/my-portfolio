@@ -108,7 +108,7 @@ const About = () => {
           type="button"
           title="Navigate to google docs"
         >
-          <a href="https://drive.google.com/file/d/1KTK6_hiLn08mdsJvgQdJDKy_6iQ7ggoK/view?usp=sharing" target="_blank" rel="noreferrer">Get My Resume</a>
+          <a href="https://drive.google.com/file/d/1cZ7ykcpj5RER1zL_0XpxJXOqekF6h6tu/view?usp=drive_link" target="_blank" rel="noreferrer">Get My Resume</a>
         </button>
       </div>
       <div className="w-full sm:h-auto">
