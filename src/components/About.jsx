@@ -107,7 +107,7 @@ const About = () => {
           className="border rounded-md border-secondary px-4 py-2 text-secondary bg-white text-left w-max see-project-btn hover:cursor-pointer hover:bg-secondary hover:text-white transition duration-500 ease-in-out"
           type="button"
           title="Navigate to google docs"
-        >
+        >        
           <a href="https://drive.google.com/file/d/1cZ7ykcpj5RER1zL_0XpxJXOqekF6h6tu/view?usp=drive_link" target="_blank" rel="noreferrer">Get My Resume</a>
         </button>
       </div>

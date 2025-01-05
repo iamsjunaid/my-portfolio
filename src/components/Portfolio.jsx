@@ -8,11 +8,54 @@ import nationsFacts from '../assets/img/nations-facts.png';
 import spaceTravellersHub from '../assets/img/space-travellers-hub.png';
 import healthCareDashboard from '../assets/img/healthcareDashboard.jpg';
 import nextEvents from '../assets/img/next-events.png';
+import tasksTracker from '../assets/img/tasks-tracker.png';
+import nextBlog from '../assets/img/next-blog.png';
 
 const Portfolio = () => {
   const projects = [
     {
       no: '0',
+      id: uuidv4(),
+      img: nextBlog,
+      company: 'Self employed',
+      designation: 'Full stack developer',
+      year: '2024',
+      title: 'Next Blog',
+      desc: 'Leveraging the power of NextJS & React for building user interfaces and MongoDB for database management. It also uses gray-matter for parsing front-matter from markdown files, react-markdown for rendering markdown content, and react-syntax-highlighter for syntax highlighting in markdown.',
+      techs: [
+        'NextJS',
+        'ReactJS',
+        'MongoDB',
+        'Gray-matter',
+        'React-markdown',
+        'React-syntax-highlighter',
+        'Tailwind CSS',
+      ],
+      live: 'https://next-blogs-zeta-five.vercel.app/',
+      source: 'https://github.com/iamsjunaid/next_blogs',
+    },
+    {
+      no: '1',
+      id: uuidv4(),
+      img: tasksTracker,
+      company: 'Self employed',
+      designation: 'Full stack developer',
+      year: '2024',
+      title: 'Tasks Tracker',
+      desc: 'A simple task management application built with FastAPI for the backend and React for the frontend. The backend uses Firebase Realtime Database for data storage and management.',
+      techs: [
+        'ReactJS',
+        'Python',
+        'Fast API',
+        'Firebase Realtime Database',
+        'SQLAlchemy',
+        'Taiwind CSS',
+      ],
+      live: 'https://tasks-vert.vercel.app/',
+      source: 'https://github.com/iamsjunaid/tasks',
+    },
+    {
+      no: '2',
       id: uuidv4(),
       img: nextEvents,
       company: 'Self employed',
@@ -26,11 +69,11 @@ const Portfolio = () => {
         'Vanilla JavaScript',
         'CSS3',
       ],
-      live: 'https://next-events-pi-smoky.vercel.app/events',
+      live: 'https://next-events-pi.vercel.app/',
       source: 'https://github.com/iamsjunaid/next_events',
     },
     {
-      no: '1',
+      no: '3',
       id: uuidv4(),
       img: healthCareDashboard,
       company: 'Self employed',
@@ -49,7 +92,7 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/healthcare_dashboard',
     },
     {
-      no: '2',
+      no: '4',
       id: uuidv4(),
       img: docTalk,
       company: 'Microverse',
@@ -70,7 +113,7 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/DocTalk-Frontend',
     },
     {
-      no: '3',
+      no: '5',
       id: uuidv4(),
       img: budgetBee,
       company: 'Microverse',
@@ -83,7 +126,7 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/budget-bee',
     },
     {
-      no: '4',
+      no: '6',
       id: uuidv4(),
       img: nationsFacts,
       company: 'Microverse',
@@ -96,7 +139,7 @@ const Portfolio = () => {
       source: 'https://github.com/iamsjunaid/nations-facts',
     },
     {
-      no: '5',
+      no: '7',
       id: uuidv4(),
       img: spaceTravellersHub,
       company: 'Microverse',
@@ -110,7 +153,7 @@ const Portfolio = () => {
     },
 
     {
-      no: '6',
+      no: '8',
       id: uuidv4(),
       img: mealsDb,
       company: 'Microverse',
